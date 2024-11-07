@@ -3,6 +3,7 @@
 	import '../tailwind.css';
 	import Nav from '../components/Nav.svelte';
 	import { MY_TWITTER_HANDLE, REPO_URL, SITE_TITLE } from '$lib/siteConfig';
+	import Bluesky from '../components/Bluesky.svelte';
 </script>
 
 <svelte:head>
@@ -43,6 +44,7 @@
 				</a>
 			</div>
 			<div class="flex flex-col space-y-4">
+				<Bluesky/>
 				<a
 					class="text-gray-900 transition hover:text-logo-red dark:text-yellow-400 dark:hover:text-logo-red"
 					target="_blank"
@@ -61,10 +63,5 @@
 				</a>
 			</div>
 		</div>
-		<p class="px-4 text-gray-900 dark:text-gray-400 sm:px-8">
-			Built with the
-			<a href="https://swyxkit.netlify.app/">swyxkit</a>
-			template.
-		</p>
 	</footer>
 {/if}
